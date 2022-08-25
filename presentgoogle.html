@@ -6,57 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <style>
-        .top {
-            font-family: arial,sans-serif;
-        }
-        .about {
-        padding-left: 15px;
-        color: #000;
-        opacity: 0.75;
-        text-decoration-color: #fff;
+      .top {
         font-family: arial,sans-serif;
-        font-size: 13px;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 30px;
+        margin-top: 20px;
+      }
 
-        .store {
+      a{
+        color: #5f6368;
+        text-decoration: none;
+        font-size: 14px;
         display: inline-block;
-        padding-left: 15px;
-        color: #000;
-        opacity: 0.75;
-        text-decoration-color: #fff;
-        font-size: 13px;
-        }
-        
-        .gmail {
-        display: inline-block;
-        padding-left: 1200px;
-        color: #000;
-        opacity: 0.75;
-        text-decoration-color: #fff;
-        font-size: 13px;
-        }
+        margin-left: 20px;
+      }
 
-        .ımages {
-        display: inline-block;
-        color: #000;
-        opacity: 0.75;
-        text-decoration-color: #fff;
-        padding-left:15px;
-        font-size: 13px;
-        }
+      a:hover{
+        text-decoration: none;
+      }
 
-        .app{
+
+      .app{
         color: transparent;
         flex: 100%;
         white-space: pre;
         font: 16px arial, sans-serif;
         line-height: 30px;
         height: 30px !important;
-        padding-left:15px;
+        padding-left:1050px;
         font-size: 13px;
-        }
+      }
         
-        .sign { 
+      .sign { 
         background-size: 32px 32px;
         border: 0;
         border-radius: 50%;
@@ -66,91 +49,109 @@
         z-index: 0;
         padding-left: 15px;
         font-size: 13px;
-        }
+      }
 
-        .medium{
+      .medium{
         text-align: center;
         font-size: 14px;
-        }
+      }
         
-        .logo {
-          text-align: center;
-        }
+      .logo {
+        text-align: center;
+      }
 
-        .sbox {
-          width: 480px;
-          margin: 0px auto;
-          position: relative;
-          margin-top: -8px;
-          text-align: center;
-        }
+      .sbox {
+        width: 480px;
+        margin: 0px auto;
+        position: relative;
+        margin-top: -8px;
+        text-align: center;
+      }
 
-        .s-input {
-          display: block;
-          border: 1px solid #ddd;
-          color: rgba(0,0,0,0.87);
-          font-size: 16px;
-          padding: 13px;
-          padding-left: 45px;
-          border-radius: 25px;
-          width: 100%;
-          outline: none;
-        }
+      .s-input {
+        display: block;
+        border: 1px solid #ddd;
+        color: rgba(0,0,0,0.87);
+        font-size: 16px;
+        padding: 13px;
+        padding-left: 45px;
+        border-radius: 25px;
+        width: 100%;
+        outline: none;
+      }
 
-        .s-input:hover {
-          box-shadow: 1px 1px 5px grey;
-        }
+      .s-input:hover {
+        box-shadow: 1px 1px 5px grey;
+      }
 
-        .search-icon {
-          width: 20px;
-          opacity: 0.4;
-          position: absolute;
-          top: 13px;
-          left: 14px;
-        }
+      .search-icon {
+        width: 20px;
+        opacity: 0.4;
+        position: absolute;
+        top: 13px;
+        left: 14px;
+      }
 
-        .v-icon {
-          width: 18px;
-          position: absolute;
-          top: 13px;
-          right: 20px;
-        }
+      .v-icon {
+        width: 18px;
+        position: absolute;
+        top: 13px;
+        right: 20px;
+      }
 
-        .v-icon:hover {
-          opacity: 0.8;
-        }
+      .v-icon:hover {
+        opacity: 0.8;
+      }
 
-        button {
-          border: 1px solid transparent;
-          padding: 9px 15px;
-          color: rgba(0, 0, 0);
-          font-size: 14px;
-          border-radius: 4px;
-          display: inline-block;
-          margin-right:10px;
-          margin-top: 28px;
-          cursor: pointer;
-        }
+      button {
+        border: 1px solid transparent;
+        padding: 9px 15px;
+        color: rgba(0, 0, 0);
+        font-size: 14px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-right:10px;
+        margin-top: 28px;
+        cursor: pointer;
+      }
 
-        .button:hover {
-          border: 1px solid #aaa;
-        }
+      .button:hover {
+        border: 1px solid #aaa;
+      }
+      
         
-        
-          .end {
-           border-top: 1px solid #ddd;
-           display: flex;
-           }
+      .end {
+        background-color:#f2f2f2;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 36px;
+        }
 
-           .end1 {
-             padding-left: 18px;
-             flex: 1;
+        a{
+        display: inline-block;
+        padding:12px 11px;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        }
+
+        a:hover{
+          text-decoration: underline;
+        }
+
+        .end1 {
+        padding-left: 18px;
+        flex: 1;
+        float: left;
           
-           }
+        }
 
-           .end2 {
-            padding-right: 18px;
-           }
+        .end2 {
+        margin-right: 48px;
+        flex: 1;
+        float: right;
+        }
 
 
 
@@ -160,7 +161,7 @@
 <body>
     <!--Üst Kısım  -->
 <div class="top">
-    <a class="about" href="https://web.archive.org/web/20191130234759/https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header">About</a>
+    <a class="abou" href="https://web.archive.org/web/20191130234759/https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header">About</a>
     <a class="store" href="https://web.archive.org/web/20191130234759/https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US">Store</a>
     <a class="gmail" href="https://web.archive.org/web/20191130234759/https://mail.google.com/mail/?tab=wm&amp;ogbl">Gmail</a>
     <a class="ımages" href="https://web.archive.org/web/20191130234759/https://www.google.com/imghp?hl=en&amp;tab=wi&amp;ogbl">Images</a>
@@ -184,14 +185,14 @@
     <!-- Alt Kısım -->
     <div class="end">
       <div class="end1"> 
-        <a class="advertising" href="https://web.archive.org/web/20191130234759/https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/intl/en_us/ads/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&amp;ved=0ahUKEwjP97vPj5PmAhWRhJ4KHUKtAG8QkdQCCBU">Advertising</a>
-        <a class="business" href="https://web.archive.org/web/20191130234759/https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1" ping="/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/services/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&amp;ved=0ahUKEwjP97vPj5PmAhWRhJ4KHUKtAG8QktQCCBY">Business</a>
-        <a class="hsw" href="//web.archive.org/web/20191130234759/https://google.com/search/howsearchworks/?fg=1">  How Search works </a>
+        <a href="#">Advertising</a>
+        <a href="#">Business</a>
+        <a href="#">How Search works</a>
       </div>  
      <div class="end2">
-        <a class="privacy" href="https://web.archive.org/web/20191130234759/https://policies.google.com/privacy?fg=1">Privacy</a>
-        <a class="terms" href="https://web.archive.org/web/20191130234759/https://policies.google.com/terms?fg=1">Terms</a>
-        <a class="sttng" href="https://web.archive.org/web/20191130234759/https://www.google.com/preferences?hl=en">Settings</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Settings</a>
       </div>
         
     </div>
